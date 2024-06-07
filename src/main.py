@@ -13,6 +13,7 @@ def init():
     logging.info("Initializing application...")
     logging.info("Loaded environment variables")
 
+
 def main():
     logging.info("Running application...")
     network.run_analysis()
