@@ -1,14 +1,9 @@
-# Python base app
+# Networks
 
-[![python-baseapp](https://github.com/pieteradejong/python-baseapp/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/pieteradejong/python-baseapp/actions/workflows/ci.yml)
+[![networks](https://github.com/pieteradejong/networks/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/pieteradejong/networks/actions/workflows/ci.yml)
 
 
 ## Goal
-Template for future projects, incorporating best practices and essential project setup steps, including: 
-* init.sh script
-* environment vars
-* logging* 
-* tests
 
 ## Development
 Recommend using `black` formatter and `ruff` linter.
