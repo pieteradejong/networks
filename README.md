@@ -13,6 +13,7 @@ Template for future projects, incorporating best practices and essential project
 ## Development
 Recommend using `black` formatter and `ruff` linter.
 
+
 ## Dependencies
 See `requirements.txt`
 
