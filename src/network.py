@@ -3,16 +3,13 @@ import plotly.graph_objs as go
 
 
 def run_analysis():
-    # Create a graph
     G = nx.Graph()
     G.add_edge(1, 2)
 
-    # Extract edge and node positions
     pos = nx.spring_layout(G)
     edges = list(G.edges())
     nodes = list(G.nodes())
 
-    # Create edge trace
     edge_trace = go.Scatter(
         x=[], y=[], line=dict(width=2, color="gray"), hoverinfo="none", mode="lines"
     )
@@ -23,7 +20,6 @@ def run_analysis():
         edge_trace["x"] += (x0, x1, None)
         edge_trace["y"] += (y0, y1, None)
 
-    # Create node trace
     node_trace = go.Scatter(
         x=[],
         y=[],
@@ -39,7 +35,6 @@ def run_analysis():
         node_trace["y"] += (y,)
         node_trace["text"] += (str(node),)
 
-    # Create figure
     fig = go.Figure(
         data=[edge_trace, node_trace],
         layout=go.Layout(
